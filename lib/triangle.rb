@@ -8,21 +8,21 @@ class Triangle
   end
 
   def kind
-    if (a <= 0) || (@b <= 0) || (c<= 0)
+    if (a <= 0) || (@b <= 0) || (@c<= 0)
            raise TriangleError
     elsif (@a+@b <= @c) || (@a+@c <= @b) || (@b+@c <= @a)
           raise TriangleError
     elsif (@a != @b) && (@b != @c) && (@a != @c)
           :scalene
     elsif (@a == @b) && (@b == @c)
-          :equilateral
+            :equilateral
     elsif (@a == @b) || (@b == @c) || (@a == @c)
-          :isosceles
+            :isosceles
     end
   end
 
 
   class TriangleError < StandardError
-  # def
-  # end
+
+  end
 end
