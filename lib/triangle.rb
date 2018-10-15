@@ -6,4 +6,8 @@ class Triangle
     @isosceles = isosceles
     @scalene = scalene
   end
+  class TriangleError
+    def kind
+    end
+  end
 end
