@@ -8,7 +8,7 @@ class Triangle
   end
 
   def kind
-    if ((a <= 0) || (@b <= 0) || (c<= 0)) || 
+    if ((a <= 0) || (@b <= 0) || (c<= 0)) ||
            raise TriangleError
     elsif (@a+@b <= @c) || (@a+@c <= @b) || (@b+@c <= @a)
           raise TriangleError
@@ -23,6 +23,6 @@ class Triangle
 
 
   class TriangleError < StandardError
-  def 
+  def
   end
 end
