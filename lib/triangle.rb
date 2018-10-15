@@ -23,6 +23,6 @@ class Triangle
 
 
   class TriangleError < StandardError
-  def
-  end
+  # def
+  # end
 end
